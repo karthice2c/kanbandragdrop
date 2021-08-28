@@ -45,14 +45,14 @@ const App = () => {
         ...start,
         taskIds: newTaskIds
       }
-      const newState = {
+      const newState1 = {
         ...data,
         columns: {
           ...data.columns,
           [newColumn.id]: newColumn
         }
       }
-      setData(newState)
+      setData(newState1)
       return;
     }
 
@@ -71,7 +71,7 @@ const App = () => {
       taskIds: finishTaskIds
     }
 
-    const newState1 = {
+    const newState2 = {
       ...data,
       columns: {
         ...data.columns,
@@ -80,7 +80,7 @@ const App = () => {
       }
     }
 
-    setData(newState1)
+    setData(newState2)
   }
 
   return (
