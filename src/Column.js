@@ -32,14 +32,14 @@ function Column(props) {
                     {...provided.draggableProps}>
                     <Title {...provided.dragHandleProps}>{props.column.title}</Title>
                     <Droppable droppableId={props.column.id} type='task'>
-                        {(provided, snapshot) => (
+                        {(provided1, snapshot) => (
                             <TaskList
-                                ref={provided.innerRef}
-                                {...provided.droppableProps}
+                                ref={provided1.innerRef}
+                                {...provided1.droppableProps}
                                 isDraggingOver={snapshot.isDraggingOver}
                             >
                                 {props.tasks.map((task, index) => <Task key={task.id} task={task} index={index} />)}
-                                {provided.placeholder}
+                                {provided1.placeholder}
                             </TaskList>
                         )}
                     </Droppable>
