@@ -71,7 +71,7 @@ const App = () => {
       taskIds: finishTaskIds
     }
 
-    const newState = {
+    const newState1 = {
       ...data,
       columns: {
         ...data.columns,
@@ -80,7 +80,7 @@ const App = () => {
       }
     }
 
-    setData(newState)
+    setData(newState1)
   }
 
   return (
